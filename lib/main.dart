@@ -129,6 +129,227 @@ class _MyAppState extends State<MyApp> {
           },
         ),
       ),
+
+      child: SingleChildScrollView(
+        child: SafeArea(
+          child: Padding(
+            padding: const EdgeInsets.all(25.0),
+            child: Column(
+              children: [
+                SizedBox(height: 20),
+
+                Container(
+                  width: double.maxFinite,
+                  decoration: BoxDecoration(
+                    color: CupertinoColors.systemBlue,
+                    borderRadius: BorderRadius.circular(10),
+                  ),
+                  child: CupertinoButton(
+                    child: Text(
+                      'Length Conversion',
+                      style: TextStyle(
+                        fontSize: 16,
+                        color: CupertinoColors.white,
+                      ),
+                      textAlign: TextAlign.center,
+                    ),
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        CupertinoPageRoute(builder: (context) => DistanceApp()),
+                      );
+                    },
+                  ),
+                ),
+
+                SizedBox(height: 10),
+
+                Container(
+                  width: double.maxFinite,
+                  decoration: BoxDecoration(
+                    color: CupertinoColors.systemBlue,
+                    borderRadius: BorderRadius.circular(10),
+                  ),
+                  child: CupertinoButton(
+                    child: Text(
+                      'Weight Conversion',
+                      style: TextStyle(
+                        fontSize: 16,
+                        color: CupertinoColors.white,
+                      ),
+                      textAlign: TextAlign.center,
+                    ),
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        CupertinoPageRoute(builder: (context) => WeightApp()),
+                      );
+                    },
+                  ),
+                ),
+
+                SizedBox(height: 10),
+
+                Container(
+                  width: double.maxFinite,
+                  decoration: BoxDecoration(
+                    color: CupertinoColors.systemBlue,
+                    borderRadius: BorderRadius.circular(10),
+                  ),
+                  child: CupertinoButton(
+                    child: Text(
+                      'Temperature Conversion',
+                      style: TextStyle(
+                        fontSize: 16,
+                        color: CupertinoColors.white,
+                      ),
+                      textAlign: TextAlign.center,
+                    ),
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        CupertinoPageRoute(
+                          builder: (context) => TemperatureApp(),
+                        ),
+                      );
+                    },
+                  ),
+                ),
+
+                SizedBox(height: 10),
+
+                Container(
+                  width: double.maxFinite,
+                  decoration: BoxDecoration(
+                    color: CupertinoColors.systemBlue,
+                    borderRadius: BorderRadius.circular(10),
+                  ),
+                  child: CupertinoButton(
+                    child: Text(
+                      'Volume Conversion',
+                      style: TextStyle(
+                        fontSize: 16,
+                        color: CupertinoColors.white,
+                      ),
+                      textAlign: TextAlign.center,
+                    ),
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        CupertinoPageRoute(builder: (context) => VolumeApp()),
+                      );
+                    },
+                  ),
+                ),
+
+                SizedBox(height: 10),
+
+                Container(
+                  width: double.maxFinite,
+                  decoration: BoxDecoration(
+                    color: CupertinoColors.systemBlue,
+                    borderRadius: BorderRadius.circular(10),
+                  ),
+                  child: CupertinoButton(
+                    child: Text(
+                      'Speed Conversion',
+                      style: TextStyle(
+                        fontSize: 16,
+                        color: CupertinoColors.white,
+                      ),
+                      textAlign: TextAlign.center,
+                    ),
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        CupertinoPageRoute(builder: (context) => SpeedApp()),
+                      );
+                    },
+                  ),
+                ),
+
+                SizedBox(height: 10),
+
+                Container(
+                  width: double.maxFinite,
+                  decoration: BoxDecoration(
+                    color: CupertinoColors.systemBlue,
+                    borderRadius: BorderRadius.circular(10),
+                  ),
+                  child: CupertinoButton(
+                    child: Text(
+                      'Time Conversion',
+                      style: TextStyle(
+                        fontSize: 16,
+                        color: CupertinoColors.white,
+                      ),
+                      textAlign: TextAlign.center,
+                    ),
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        CupertinoPageRoute(builder: (context) => TimeApp()),
+                      );
+                    },
+                  ),
+                ),
+
+                SizedBox(height: 10),
+
+                Container(
+                  width: double.maxFinite,
+                  decoration: BoxDecoration(
+                    color: CupertinoColors.systemBlue,
+                    borderRadius: BorderRadius.circular(10),
+                  ),
+                  child: CupertinoButton(
+                    child: Text(
+                      'Area Conversion',
+                      style: TextStyle(
+                        fontSize: 16,
+                        color: CupertinoColors.white,
+                      ),
+                      textAlign: TextAlign.center,
+                    ),
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        CupertinoPageRoute(builder: (context) => AreaApp()),
+                      );
+                    },
+                  ),
+                ),
+
+                SizedBox(height: 10),
+
+                Container(
+                  width: double.maxFinite,
+                  decoration: BoxDecoration(
+                    color: CupertinoColors.systemBlue,
+                    borderRadius: BorderRadius.circular(10),
+                  ),
+                  child: CupertinoButton(
+                    child: Text(
+                      'Pressure Conversion',
+                      style: TextStyle(
+                        fontSize: 16,
+                        color: CupertinoColors.white,
+                      ),
+                      textAlign: TextAlign.center,
+                    ),
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        CupertinoPageRoute(builder: (context) => PressureApp()),
+                      );
+                    },
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ),
+      ),
     );
   }
 }
